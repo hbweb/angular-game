@@ -21,10 +21,12 @@ Alternatively, following the command line below in your Terminal
 Run 
 
 
-`npm install -g bower`
-`npm install -g grunt-cli`
-`npm install -g yo`
-`npm install -g generator-angular-fullstack`
+```
+npm install -g bower
+npm install -g grunt-cli
+npm install -g yo
+npm install -g generator-angular-fullstack
+```
 
 
 Create your project name 'hbweb-mean-tutorial'
@@ -42,6 +44,18 @@ You will need to choose number of options through the setup process.
 > MongoDB with Mongoose: Yes
 > Authentication: No
 > Socket.io: No (for now)
+
+### Step 1 - Node Express & MongoDB 
+We are going to create an endpoint and configure our Node server and build a game listing page
+
+- GRUB (Create, read, update, delate) video games
+- Each game will have a platform, genre & condition
+- View all games
+
+This project should be kept very small (on purpose). There will be much more functionalities you can build but I will leave it up to you.
+
+The whole point of this tutorial is to get you started with your CRUD component.
+
 
 ### Developing
 
