@@ -57,6 +57,14 @@ This project should be kept very small (on purpose). There will be much more fun
 The whole point of this tutorial is to get you started with your CRUD component.
 
 
+## Endpoint
+
+In your project directory, type
+
+`yo angular-fullstack:endpoint game`
+
+
+
 ### Developing
 
 1. Run `npm install` to install server dependencies.

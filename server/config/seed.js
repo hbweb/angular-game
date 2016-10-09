@@ -12,32 +12,32 @@ Game.find({}).remove()
     Game.create({
       name: 'Fila 17',
       platform: 'Xbox One',
-      gerne:'Sport',
+      genre:'Sport',
       condition:'new'
     }, {
       name: 'Fila 16',
       platform: 'Xbox One',
-      gerne:'Sport',
+      genre:'Sport',
       condition:'old'
     }, {
       name: 'Fallout 4',
       platform: 'Playstation 4',
-      gerne:'Role-Playing',
+      genre:'Role-Playing',
       condition:'new'
     }, {
       name: 'Call of Duty',
       platform: 'Playstation 4',
-      gerne:'Role-Playing',
+      genre:'Role-Playing',
       condition:'new'
     }, {
       name: 'Gears of War 4',
       platform: 'Wii',
-      gerne:'Role-Playing',
+      genre:'Role-Playing',
       condition:'new'
     }, {
       name: 'Wii Sport',
       platform: 'Wii Sport',
-      gerne:'Role-Playing',
+      genre:'Role-Playing',
       condition:'new'
     });
   });

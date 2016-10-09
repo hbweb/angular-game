@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 var GameSchema = new mongoose.Schema({
   name: String,
   platform: String,
-  gerne: String,
+  genre: String,
   condition: String
 });
 
