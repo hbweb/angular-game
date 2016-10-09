@@ -4,37 +4,41 @@
  */
 
 'use strict';
-import Thing from '../api/thing/thing.model';
 
-Thing.find({}).remove()
+import Game from '../api/game/game.model';
+
+Game.find({}).remove()
   .then(() => {
-    Thing.create({
-      name: 'Development Tools',
-      info: 'Integration with popular tools such as Webpack, Gulp, Babel, TypeScript, Karma, '
-            + 'Mocha, ESLint, Node Inspector, Livereload, Protractor, Pug, '
-            + 'Stylus, Sass, and Less.'
+    Game.create({
+      name: 'Fila 17',
+      platform: 'Xbox One',
+      gerne:'Sport',
+      condition:'new'
     }, {
-      name: 'Server and Client integration',
-      info: 'Built with a powerful and fun stack: MongoDB, Express, '
-            + 'AngularJS, and Node.'
+      name: 'Fila 16',
+      platform: 'Xbox One',
+      gerne:'Sport',
+      condition:'old'
     }, {
-      name: 'Smart Build System',
-      info: 'Build system ignores `spec` files, allowing you to keep '
-            + 'tests alongside code. Automatic injection of scripts and '
-            + 'styles into your index.html'
+      name: 'Fallout 4',
+      platform: 'Playstation 4',
+      gerne:'Role-Playing',
+      condition:'new'
     }, {
-      name: 'Modular Structure',
-      info: 'Best practice client and server structures allow for more '
-            + 'code reusability and maximum scalability'
+      name: 'Call of Duty',
+      platform: 'Playstation 4',
+      gerne:'Role-Playing',
+      condition:'new'
     }, {
-      name: 'Optimized Build',
-      info: 'Build process packs up your templates as a single JavaScript '
-            + 'payload, minifies your scripts/css/images, and rewrites asset '
-            + 'names for caching.'
+      name: 'Gears of War 4',
+      platform: 'Wii',
+      gerne:'Role-Playing',
+      condition:'new'
     }, {
-      name: 'Deployment Ready',
-      info: 'Easily deploy your app to Heroku or Openshift with the heroku '
-            + 'and openshift subgenerators'
+      name: 'Wii Sport',
+      platform: 'Wii Sport',
+      gerne:'Role-Playing',
+      condition:'new'
     });
   });
 
