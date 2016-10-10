@@ -48,6 +48,12 @@ export class GamesComponent {
       console.log('Fail to delete the game... Somthing went wrong!' + error.data);
     })
   }
+  
+  // Function to edit a game
+  toggleEditGame(index) {
+    this.allGames[index].editMode = !this.allGames[index].editMode;
+    console.log('Toggle Edit Game ' + index);
+  }
 
 }
 

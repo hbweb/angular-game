@@ -13,11 +13,32 @@
           </thead>
           <tbody>
           <tr ng-repeat="game in gamesCtrl.allGames">
-              <td>{{game.name}}</td>
-              <td>{{game.platform}}</td>
-              <td>{{game.genre}}</td>
-              <td>{{game.condition}}</td>
-              <td><button class="btn btn-danger" data-ng-click="gamesCtrl.removeGame($index);">Delete</button></td>
+              <td>
+                  <span data-ng-hide="game.editMode === true">{{game.name}}</span>
+                  <span data-ng-show="game.editMode === true"><input type="text" class="" value="{{game.name}}" /></span>
+              </td>
+              <td>
+                  <span data-ng-hide="game.editMode === true">{{game.platform}}</span>
+                  <span data-ng-show="game.editMode === true"><input type="text" class="" value="{{game.platform}}" /></span>
+              </td>
+              <td>
+                  <span data-ng-hide="game.editMode === true">{{game.genre}}</span>
+                  <span data-ng-show="game.editMode === true"><input type="text" class="" value="{{game.genre}}" /></span>
+              </td>
+              <td>
+                  <span data-ng-hide="game.editMode === true">{{game.condition}}</span>
+                  <span data-ng-show="game.editMode === true"><input type="text" class="" value="{{game.condition}}" /></span>
+              </td>
+              <td>
+                <span data-ng-hide="game.editMode === true">
+                    <button class="btn btn-success" ng-click="gamesCtrl.toggleEditGame($index)">Edit</button>
+                    <button class="btn btn-danger" ng-click="gamesCtrl.removeGame($index)">Delete</button>
+                </span>
+                <span data-ng-show="game.editMode === true">
+                    <button class="btn btn-primary" ng-click="gamesCtrl.saveGame($index)">Save</button>
+                    <button class="btn btn-default" ng-click="gamesCtrl.cancelEditMode($index)">Cancel</button>
+                </span>
+              </td>
           </tr>
           <tr>
               <td><input type="text" ng-model="gamesCtrl.newGame.name" /></td>
